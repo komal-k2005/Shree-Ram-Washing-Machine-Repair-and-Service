@@ -1,105 +1,287 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | Shree Ram Washing Machine Repair And Service</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Shri Ram Enterprises Pune</title>
+  <meta name="description" content="Contact Shri Ram Enterprises in Baner, Pune for washing machine, refrigerator, and microwave repair. Call +91 96040 64825 or drop an email.">
+  
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Scroll Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-social"><span>Follow Us:</span><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
-      <div class="top-contact">
-        <a href="tel:+919604064825"><i class="fas fa-phone"></i> +91 96040 64825</a>
-        <a href="mailto:shreeramrepair@gmail.com"><i class="fas fa-envelope"></i> shreeramrepair@gmail.com</a>
-      </div>
-    </div>
-  </div>
-  <header class="navbar-main">
-    <div class="container navbar-inner">
-      <a href="index.html" class="brand-logo">
-        <div class="brand-icon"><i class="fas fa-tools"></i></div>
-        <div class="brand-text"><strong>SHREE RAM</strong><small>Washing Machine — Repair And Service —</small></div>
+
+  <!-- Premium Header / Sticky Nav -->
+  <header class="header scrolled" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-container">
+        <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" stroke="#d4af37" stroke-width="2" fill="rgba(7, 22, 44, 0.6)"/>
+          <path d="M35 30C35 24 45 22 50 22C62 22 65 30 57 37C49 44 38 43 38 52C38 59 48 59 55 59" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+          <path d="M50 50C50 50 58 50 63 50C71 50 78 54 78 62C78 72 68 76 56 76C48 76 45 72 45 66" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+          <path d="M48 50L68 75" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          <h3>Shri Ram</h3>
+          <span>Enterprises</span>
+        </div>
       </a>
-      <button class="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="#">Our Services <i class="fas fa-chevron-down" style="font-size:0.65rem"></i></a>
-          <ul class="dropdown">
-            <li><a href="washing-machine-repair.html">Washing Machine Repair</a></li>
-            <li><a href="fridge-repair.html">Fridge Repair</a></li>
-            <li><a href="microwave-oven-repair.html">Microwave Oven Repair</a></li>
-          </ul>
-        </li>
-        <li><a href="contact-us.html" class="active">Contact Us</a></li>
-        <li><a href="contact-us.html" class="btn-quote">Get a Quote</a></li>
-      </ul>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about-us.html" class="nav-link">About Us</a>
+        <div class="nav-link" style="cursor: pointer; position: relative;" id="services-nav">
+          Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+          <!-- Custom Dropdown -->
+          <div style="position: absolute; top: 100%; left: 0; background: var(--primary-dark); width: 220px; border-radius: 4px; display: none; flex-direction: column; border: 1px solid var(--border-gold); z-index: 100; margin-top: 10px;" id="services-dropdown">
+            <a href="washing-machine-repair.html" style="padding: 12px 16px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff;">Washing Machine Repair</a>
+            <a href="fridge-repair.html" style="padding: 12px 16px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff;">Refrigerator Repair</a>
+            <a href="microwave-oven-repair.html" style="padding: 12px 16px; font-size: 14px; color: #fff;">Microwave Repair</a>
+          </div>
+        </div>
+        <a href="contact-us.html" class="nav-link active">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="tel:9604064825" class="phone-action">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+91 96040 64825</span>
+        </a>
+        <a href="#book-service" class="btn btn-gold">Book Service</a>
+      </div>
+      
+      <div class="mobile-toggle" id="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
   </header>
 
-  <section class="page-banner">
-    <div class="container">
-      <h1>Contact Us</h1>
-      <nav class="breadcrumb-nav"><a href="index.html">Home</a> / Contact Us</nav>
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-close" id="mobile-overlay-close">
+      <i class="fa-solid fa-xmark"></i>
     </div>
-  </section>
-
-  <section class="contact-page-grid container">
-    <div>
-      <h2 style="color:var(--primary-dark)">Get in Touch</h2>
-      <div class="contact-detail-card">
-        <h6>Our Phone</h6>
-        <a href="tel:+919604064825"><strong>+91 96040 64825</strong></a>
-      </div>
-      <div class="contact-detail-card">
-        <h6>Our Email</h6>
-        <a href="mailto:shreeramrepair@gmail.com">shreeramrepair@gmail.com</a>
-      </div>
-      <div class="contact-detail-card">
-        <h6>Our Address</h6>
-        <p>Baner, Nanded City</p>
-      </div>
-      <div class="contact-detail-card">
-        <h6>Working Hours</h6>
-        <p>Mon – Sat: 8:00 AM – 8:00 PM<br />Sun: 9:00 AM – 2:00 PM</p>
-      </div>
-    </div>
-    <form class="enquiry-form" id="enquiry-form" style="box-shadow:0 4px 24px rgba(0,0,0,0.08)">
-      <h2>Make an Enquiry</h2>
-      <label>Full Name <input type="text" name="name" placeholder="Full Name" required /></label>
-      <label>Phone Number <input type="tel" name="phone" placeholder="Phone Number" required /></label>
-      <label>Email Address <input type="email" name="email" placeholder="Email Address" /></label>
-      <label>Product Name* <input type="text" name="product" placeholder="Product Name*" required /></label>
-      <label>Your Message <textarea name="message" rows="4" placeholder="Your Message"></textarea></label>
-      <button type="submit" class="btn-send">Send Message</button>
-      <p class="form-note" id="form-note">Thank you! We will contact you soon.</p>
-    </form>
-  </section>
-
-  <section class="enquiry-section" style="padding:2rem 0">
-    <div class="container">
-      <div class="footer-map" style="height:320px;border-radius:8px;overflow:hidden">
-        <iframe src="https://maps.google.com/maps?q=Baner,Nanded,Maharashtra&hl=en&z=14&output=embed" width="100%" height="320" style="border:0" allowfullscreen loading="lazy" title="Location map"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><h5>About us</h5><p>Contact Shree Ram for fast appliance repair at your doorstep.</p></div>
-      <div><h5>Quick Links</h5><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="contact-us.html">Contact Us</a></li></ul></div>
-      <div><h5>Our Services</h5><ul class="footer-links"><li><a href="washing-machine-repair.html">Washing Machine Repair</a></li><li><a href="fridge-repair.html">Fridge Repair</a></li><li><a href="microwave-oven-repair.html">Microwave Oven Repair</a></li></ul></div>
-      <div><h5>Location</h5><div class="footer-map"><iframe src="https://maps.google.com/maps?q=Baner,Nanded,Maharashtra&hl=en&z=14&output=embed" loading="lazy"></iframe></div></div>
-    </div>
-    <div class="container footer-bottom"><p>&copy; <span id="year"></span> Shree Ram Washing Machine Repair And Service. All Rights Reserved.</p></div>
-  </footer>
-  <div class="float-actions">
-    <a href="tel:+919604064825" class="float-btn float-call"><i class="fas fa-phone"></i></a>
-    <a href="https://wa.me/919604064825" class="float-btn float-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about-us.html" class="mobile-link">About Us</a>
+    <a href="washing-machine-repair.html" class="mobile-link">Washing Machine Repair</a>
+    <a href="fridge-repair.html" class="mobile-link">Refrigerator Repair</a>
+    <a href="microwave-oven-repair.html" class="mobile-link">Microwave Repair</a>
+    <a href="contact-us.html" class="mobile-link active">Contact Us</a>
   </div>
+
+  <!-- Service Detail Hero Section -->
+  <section class="service-hero">
+    <div class="container">
+      <div class="service-hero-content" data-aos="fade-up">
+        <span class="section-tag">Get In Touch</span>
+        <h1>Contact Shri Ram Enterprises</h1>
+        <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto;">Have an appliance breakdown? Drop us a line or visit our shop. Our support desk is ready to answer your call.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form (Contact Page Version) -->
+  <section class="booking-section section-padding" id="book-service">
+    <div class="container">
+      <div class="booking-form-wrapper" data-aos="fade-up">
+        <!-- Form Left -->
+        <div class="booking-form-left">
+          <span class="section-tag">Instant Booking</span>
+          <h2 style="font-size: 32px; margin-bottom: 24px;">Send a Direct Message</h2>
+          
+          <form id="appointment-form" action="https://formsubmit.co/shriramenterprises084@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group">
+                <label for="appliance" class="form-label">Appliance Type *</label>
+                <select id="appliance" name="appliance" class="form-select" required>
+                  <option value="" disabled selected>Select Appliance</option>
+                  <option value="washing-machine">Washing Machine</option>
+                  <option value="refrigerator">Refrigerator</option>
+                  <option value="microwave">Microwave Oven</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date" class="form-label">Preferred Date *</label>
+                <input type="date" id="date" name="date" class="form-input" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="message" class="form-label">Tell us how we can help</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="E.g., describe errors, specify brand, outline noise issues..."></textarea>
+              </div>
+              <div class="form-group full-width" style="margin-bottom: 0;">
+                <button type="submit" class="btn btn-gold" style="width: 100%;">Submit Booking Request</button>
+              </div>
+            </div>
+          </form>
+          <div class="form-feedback" id="form-feedback"></div>
+        </div>
+        
+        <!-- Form Right -->
+        <div class="booking-form-right">
+          <div>
+            <h3>Shri Ram Enterprises</h3>
+            <p>Our workshop is situated in Baner, allowing us to cover Pune West (Aundh, Baner, Balewadi, Pashan, Wakad, Hinjewadi) within 2 hours of call confirmation.</p>
+            
+            <div class="booking-contact-list">
+              <div class="booking-contact-item">
+                <div class="booking-contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="booking-contact-info">
+                  <h4>Call Support</h4>
+                  <a href="tel:9604064825">+91 96040 64825</a>
+                </div>
+              </div>
+              
+              <div class="booking-contact-item">
+                <div class="booking-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="booking-contact-info">
+                  <h4>Email Support</h4>
+                  <a href="mailto:shriramenterprises084@gmail.com">shriramenterprises084@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="booking-contact-item">
+                <div class="booking-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="booking-contact-info">
+                  <h4>Address</h4>
+                  <p>Shop No. 4, Amar Serenity Condominium Complex, Baner, Pune - 411045</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="booking-hours-box">
+            <h4>Business Hours</h4>
+            <ul>
+              <li><span>Monday – Saturday</span><span>9:00 AM – 8:00 PM</span></li>
+              <li><span>Sunday</span><span>9:00 AM – 2:00 PM</span></li>
+              <li><span>Emergency Support</span><span>24/7 Phone Support</span></li>
+            </ul>
+          </div>
+          
+          <div style="margin-top: 30px; text-align: center;">
+            <a href="https://wap.justdial.com/jdpay2/redirect/kyc/ratings/qrshare.php?docid=020PXX20.XX20.260621221526.L8N2&vertical=44&pgsour" target="_blank" class="btn btn-outline-gold" style="width: 100%; border-color: rgba(255,255,255,0.2); color: #fff;">
+              <i class="fa-solid fa-star" style="margin-right: 8px; color: var(--accent-gold-solid);"></i> Rate Us on Justdial
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map & Contact Card Section -->
+  <section class="section-padding" style="background-color: var(--bg-light); border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-title-wrapper" data-aos="fade-up">
+        <span class="section-tag">Find Us</span>
+        <h2 class="section-title">Google Maps View & Contact Card</h2>
+        <p class="section-subtitle">Find us at Amar Serenity Condominium Complex, Shop No. 4, Baner, Pune, or save our digital card details below.</p>
+      </div>
+      
+      <div class="map-card-grid" data-aos="fade-up">
+        <!-- Interactive Map -->
+        <div style="position: relative; width: 100%; min-height: 350px; border-radius: var(--border-radius-md); border: 1px solid rgba(212, 175, 55, 0.3); overflow: hidden; box-shadow: var(--shadow-md); height: 100%;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.469796035179!2d73.79720527581121!3d18.55325856847847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec89e6ad279%3A0x7d6a50406c1ecf4b!2sAmar%20Serenity!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height:350px; display:block;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <!-- Business Card Image Card -->
+        <div style="background-color: var(--primary-dark); padding: 30px; border-radius: var(--border-radius-md); border: 1px solid var(--border-gold); text-align: center; box-shadow: var(--shadow-lg); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+          <h3 style="color: var(--text-light); margin-bottom: 20px; font-family: 'Outfit';">Digital Business Card</h3>
+          <div style="border-radius: 8px; overflow: hidden; border: 2px solid var(--accent-gold-solid); background-color: #000; display: inline-block; max-width: 100%; box-shadow: var(--shadow-gold);">
+            <img src="images/business_card.png" alt="Shri Ram Enterprises Business Card" style="width: 100%; height: auto; display: block; max-height: 240px; object-fit: contain;">
+          </div>
+          <p style="color: rgba(255,255,255,0.7); font-size: 14px; margin-top: 20px;"><i class="fa-solid fa-circle-check" style="color: var(--accent-gold-solid); margin-right: 6px;"></i> Scan or save this card for fast offline reference.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" stroke="#d4af37" stroke-width="2" fill="rgba(7, 22, 44, 0.6)"/>
+              <path d="M35 30C35 24 45 22 50 22C62 22 65 30 57 37C49 44 38 43 38 52C38 59 48 59 55 59" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+              <path d="M50 50C50 50 58 50 63 50C71 50 78 54 78 62C78 72 68 76 56 76C48 76 45 72 45 66" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+              <path d="M48 50L68 75" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-text">
+              <h3>Shri Ram</h3>
+              <span>Enterprises</span>
+            </div>
+          </a>
+          <p>Shri Ram Enterprises delivers top-tier residential home appliance repair, parts installation, and diagnostic servicing. Our expert team ensures comfort is restored to your home.</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="washing-machine-repair.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Washing Machine Repair</a></li>
+            <li><a href="fridge-repair.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Refrigerator Repairing</a></li>
+            <li><a href="microwave-oven-repair.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Microwave Oven Repair</a></li>
+            <li><a href="about-us.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> About Our Business</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact Support</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:9604064825">+91 96040 64825</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:shriramenterprises084@gmail.com">shriramenterprises084@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Shop No. 4, Amar Serenity Condominium Complex, Baner, Pune - 411045</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shri Ram Enterprises. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
   <script src="js/main.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919604064825?text=Hello,%20I%20would%20like%20to%20book%20a%20repair%20service." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </body>
 </html>

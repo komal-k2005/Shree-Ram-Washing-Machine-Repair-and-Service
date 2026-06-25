@@ -1,94 +1,294 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | Shree Ram Washing Machine Repair And Service</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Shri Ram Enterprises Pune</title>
+  <meta name="description" content="Learn about Shri Ram Enterprises. We are Pune's trusted appliance repair specialists for washing machines, refrigerators, and microwaves.">
+  
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Icon Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- AOS Scroll Animation Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <div class="top-social"><span>Follow Us:</span><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
-      <div class="top-contact">
-        <a href="tel:+919604064825"><i class="fas fa-phone"></i> +91 96040 64825</a>
-        <a href="mailto:shreeramrepair@gmail.com"><i class="fas fa-envelope"></i> shreeramrepair@gmail.com</a>
-      </div>
-    </div>
-  </div>
-  <header class="navbar-main">
-    <div class="container navbar-inner">
-      <a href="index.html" class="brand-logo">
-        <div class="brand-icon"><i class="fas fa-tools"></i></div>
-        <div class="brand-text"><strong>SHREE RAM</strong><small>Washing Machine — Repair And Service —</small></div>
+
+  <!-- Premium Header / Sticky Nav -->
+  <header class="header scrolled" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo-container">
+        <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="48" stroke="#d4af37" stroke-width="2" fill="rgba(7, 22, 44, 0.6)"/>
+          <path d="M35 30C35 24 45 22 50 22C62 22 65 30 57 37C49 44 38 43 38 52C38 59 48 59 55 59" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+          <path d="M50 50C50 50 58 50 63 50C71 50 78 54 78 62C78 72 68 76 56 76C48 76 45 72 45 66" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+          <path d="M48 50L68 75" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          <h3>Shri Ram</h3>
+          <span>Enterprises</span>
+        </div>
       </a>
-      <button class="nav-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
-      <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html" class="active">About Us</a></li>
-        <li><a href="#">Our Services <i class="fas fa-chevron-down" style="font-size:0.65rem"></i></a>
-          <ul class="dropdown">
-            <li><a href="washing-machine-repair.html">Washing Machine Repair</a></li>
-            <li><a href="fridge-repair.html">Fridge Repair</a></li>
-            <li><a href="microwave-oven-repair.html">Microwave Oven Repair</a></li>
-          </ul>
-        </li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-        <li><a href="contact-us.html" class="btn-quote">Get a Quote</a></li>
-      </ul>
+      
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about-us.html" class="nav-link active">About Us</a>
+        <div class="nav-link" style="cursor: pointer; position: relative;" id="services-nav">
+          Services <i class="fa-solid fa-chevron-down" style="font-size: 10px; margin-left: 4px;"></i>
+          <!-- Custom Dropdown -->
+          <div style="position: absolute; top: 100%; left: 0; background: var(--primary-dark); width: 220px; border-radius: 4px; display: none; flex-direction: column; border: 1px solid var(--border-gold); z-index: 100; margin-top: 10px;" id="services-dropdown">
+            <a href="washing-machine-repair.html" style="padding: 12px 16px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff;">Washing Machine Repair</a>
+            <a href="fridge-repair.html" style="padding: 12px 16px; font-size: 14px; border-bottom: 1px solid rgba(255,255,255,0.05); color: #fff;">Refrigerator Repair</a>
+            <a href="microwave-oven-repair.html" style="padding: 12px 16px; font-size: 14px; color: #fff;">Microwave Repair</a>
+          </div>
+        </div>
+        <a href="contact-us.html" class="nav-link">Contact</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="tel:9604064825" class="phone-action">
+          <i class="fa-solid fa-phone-volume"></i>
+          <span>+91 96040 64825</span>
+        </a>
+        <a href="#book-service" class="btn btn-gold">Book Service</a>
+      </div>
+      
+      <div class="mobile-toggle" id="mobile-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
   </header>
 
-  <section class="page-banner">
-    <div class="container">
-      <h1>About Us</h1>
-      <nav class="breadcrumb-nav"><a href="contact-us.html">Contact Us</a> / <a href="index.html">Home</a> / About us</nav>
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <div class="mobile-overlay-close" id="mobile-overlay-close">
+      <i class="fa-solid fa-xmark"></i>
     </div>
-  </section>
-
-  <section class="content-block">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>As a provider of repair and maintenance services for home appliances, Shree Ram Washing Machine Repair And Service plays a vital role in ensuring households continue to operate smoothly with fully functional equipment. We offer expert repair services for washing machines, refrigerators, and microwave ovens.</p>
-      <p>These appliances are integral to everyday comfort and convenience, and timely repairs help extend their lifespan and maintain efficiency. Our team diagnoses issues accurately, offers cost-effective solutions, and carries out repairs using genuine parts and industry-standard tools.</p>
-      <div class="vision-mission">
-        <div class="vm-card">
-          <h4>Vision</h4>
-          <p>To be the most reliable and customer-friendly home appliance repair service provider, ensuring peace of mind with quick, affordable, and long-lasting solutions for washing machines, microwave ovens, and refrigerators.</p>
-        </div>
-        <div class="vm-card">
-          <h4>Mission</h4>
-          <p>To deliver fast, reliable, and affordable repair services for all major home appliances with a focus on customer satisfaction, quality workmanship, and transparent communication at every step.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">All Services</h2>
-      <div class="services-grid">
-        <a href="washing-machine-repair.html" class="service-card"><img src="https://images.unsplash.com/photo-1626806819282-7948aa69d4ef?w=400&h=280&fit=crop" alt="" /><h4>Washing Machine Repair Services</h4></a>
-        <a href="fridge-repair.html" class="service-card"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?w=400&h=280&fit=crop" alt="" /><h4>Fridge Repair Services</h4></a>
-        <a href="microwave-oven-repair.html" class="service-card"><img src="https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=400&h=280&fit=crop" alt="" /><h4>Microwave Oven Repair Services</h4></a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div><h5>About us</h5><p>Shree Ram — trusted washing machine, fridge, and microwave repair.</p></div>
-      <div><h5>Quick Links</h5><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about-us.html">About Us</a></li><li><a href="contact-us.html">Contact Us</a></li></ul></div>
-      <div><h5>Our Services</h5><ul class="footer-links"><li><a href="washing-machine-repair.html">Washing Machine Repair</a></li><li><a href="fridge-repair.html">Fridge Repair</a></li><li><a href="microwave-oven-repair.html">Microwave Oven Repair</a></li></ul></div>
-      <div><h5>Location</h5><div class="footer-map"><iframe src="https://maps.google.com/maps?q=Baner,Nanded,Maharashtra&hl=en&z=14&output=embed" loading="lazy" title="Map"></iframe></div></div>
-    </div>
-    <div class="container footer-bottom"><p>&copy; <span id="year"></span> Shree Ram Washing Machine Repair And Service. All Rights Reserved.</p></div>
-  </footer>
-  <div class="float-actions">
-    <a href="tel:+919604064825" class="float-btn float-call"><i class="fas fa-phone"></i></a>
-    <a href="https://wa.me/919604064825" class="float-btn float-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about-us.html" class="mobile-link active">About Us</a>
+    <a href="washing-machine-repair.html" class="mobile-link">Washing Machine Repair</a>
+    <a href="fridge-repair.html" class="mobile-link">Refrigerator Repair</a>
+    <a href="microwave-oven-repair.html" class="mobile-link">Microwave Repair</a>
+    <a href="contact-us.html" class="mobile-link">Contact Us</a>
   </div>
+
+  <!-- Service Detail Hero Section -->
+  <section class="service-hero">
+    <div class="container">
+      <div class="service-hero-content" data-aos="fade-up">
+        <span class="section-tag">Who We Are</span>
+        <h1>About Shri Ram Enterprises</h1>
+        <p style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto;">Serving Pune West families with pride. Discover our story, values, and commitment to superior technical craftsmanship.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section class="about-content-section section-padding">
+    <div class="container">
+      <div class="service-details-grid">
+        <!-- Main Content Left -->
+        <div class="service-main-content" data-aos="fade-right">
+          <div class="service-body">
+            <h2>Our Story & Vision</h2>
+            <p>Formed as a local solution to the growing demand for trusted appliance repair in Baner, Shri Ram Enterprises has established a strong reputation as Pune West's go-to agency. We believe that home appliances are essential parts of modern daily routines, and a breakdown requires swift, neat, and highly professional repair services.</p>
+            <p>Our workshop, situated at <strong>Shop No. 4, Amar Serenity Condominium Complex</strong>, allows our technicians to deploy quickly to Baner, Balewadi, Aundh, Hinjewadi, Wakad, Pashan, and surrounding areas. We invest in high-end diagnostic tools, pressure gauges, and training programs to ensure our team stays at the absolute forefront of appliance servicing technology.</p>
+            
+            <h2>Our Core Values</h2>
+            <div class="service-feature-list">
+              <div class="service-feature-item">
+                <i class="fa-solid fa-scale-balanced" style="font-size: 20px;"></i>
+                <span><strong>Absolute Honesty:</strong> No inflated diagnostic fees or false parts swapping. We repair only what is broken.</span>
+              </div>
+              <div class="service-feature-item">
+                <i class="fa-solid fa-microchip" style="font-size: 20px;"></i>
+                <span><strong>Technical Competency:</strong> Continuous learning on microprocessor control boards and energy-efficient cooling loop systems.</span>
+              </div>
+              <div class="service-feature-item">
+                <i class="fa-solid fa-soap" style="font-size: 20px;"></i>
+                <span><strong>Neat & Safe Work:</strong> Technicians ensure that your kitchen and utility floors are cleaned up post-servicing.</span>
+              </div>
+              <div class="service-feature-item">
+                <i class="fa-solid fa-heart" style="font-size: 20px;"></i>
+                <span><strong>Customer Dedication:</strong> Quick call-backs, flexible appointment slots, and reliable post-repair warranty servicing.</span>
+              </div>
+            </div>
+
+            <h2>Why We Believe in Repairing</h2>
+            <p>We are firm believers in sustainability. Throwing away a washing machine or refrigerator just because a relay sensor, valve, or belt failed is both economically wasteful and environmentally harmful. Our repair services extend the operating life of your home investments by years, saving you money and reducing e-waste at the same time.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar Right -->
+        <div class="service-sidebar" data-aos="fade-left">
+          <!-- Widget 1: Help Card -->
+          <div class="sidebar-widget dark-widget sidebar-help-widget">
+            <i class="fa-solid fa-circle-question"></i>
+            <h3 class="sidebar-widget-title">Have a Question?</h3>
+            <p>Call our support line directly to speak with our chief technician about your appliance issues.</p>
+            <a href="tel:9604064825" class="btn btn-gold" style="width: 100%;"><i class="fa-solid fa-phone" style="margin-right: 8px;"></i> +91 96040 64825</a>
+          </div>
+
+          <!-- Widget 2: Justdial Reviews -->
+          <div class="sidebar-widget">
+            <h3 class="sidebar-widget-title">Customer Feedback</h3>
+            <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 20px;">We value your feedback. Leave a rating or write a review on our official Justdial page.</p>
+            <a href="https://wap.justdial.com/jdpay2/redirect/kyc/ratings/qrshare.php?docid=020PXX20.XX20.260621221526.L8N2&vertical=44&pgsour" target="_blank" class="btn btn-outline-gold" style="width: 100%;"><i class="fa-solid fa-star" style="margin-right: 8px;"></i> Rate Us on Justdial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Booking Form Section -->
+  <section class="booking-section section-padding" id="book-service">
+    <div class="container">
+      <div class="booking-form-wrapper" data-aos="fade-up">
+        <!-- Form Left -->
+        <div class="booking-form-left">
+          <span class="section-tag">Book Diagnostics</span>
+          <h2 style="font-size: 32px; margin-bottom: 24px;">Book a Servicing Request</h2>
+          
+          <form id="appointment-form" action="https://formsubmit.co/shriramenterprises084@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group">
+                <label for="appliance" class="form-label">Appliance Type *</label>
+                <select id="appliance" name="appliance" class="form-select" required>
+                  <option value="" disabled selected>Select Appliance</option>
+                  <option value="washing-machine">Washing Machine</option>
+                  <option value="refrigerator">Refrigerator</option>
+                  <option value="microwave">Microwave Oven</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date" class="form-label">Preferred Date *</label>
+                <input type="date" id="date" name="date" class="form-input" required>
+              </div>
+              <div class="form-group full-width">
+                <label for="message" class="form-label">Tell us what's wrong</label>
+                <textarea id="message" name="message" class="form-textarea" placeholder="E.g., drum not spinning, freezer not cooling, sparking, error code..."></textarea>
+              </div>
+              <div class="form-group full-width" style="margin-bottom: 0;">
+                <button type="submit" class="btn btn-gold" style="width: 100%;">Submit Booking Request</button>
+              </div>
+            </div>
+          </form>
+          <div class="form-feedback" id="form-feedback"></div>
+        </div>
+        
+        <!-- Form Right -->
+        <div class="booking-form-right">
+          <div>
+            <h3>Shri Ram Enterprises</h3>
+            <p>Our workshop is situated in Baner, allowing us to cover Pune West (Aundh, Baner, Balewadi, Pashan, Wakad, Hinjewadi) within 2 hours of call confirmation.</p>
+            
+            <div class="booking-contact-list">
+              <div class="booking-contact-item">
+                <div class="booking-contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="booking-contact-info">
+                  <h4>Call Support</h4>
+                  <a href="tel:9604064825">+91 96040 64825</a>
+                </div>
+              </div>
+              
+              <div class="booking-contact-item">
+                <div class="booking-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="booking-contact-info">
+                  <h4>Email Support</h4>
+                  <a href="mailto:shriramenterprises084@gmail.com">shriramenterprises084@gmail.com</a>
+                </div>
+              </div>
+              
+              <div class="booking-contact-item">
+                <div class="booking-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="booking-contact-info">
+                  <h4>Address</h4>
+                  <p>Shop No. 4, Amar Serenity Condominium Complex, Baner, Pune - 411045</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-container">
+            <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="48" stroke="#d4af37" stroke-width="2" fill="rgba(7, 22, 44, 0.6)"/>
+              <path d="M35 30C35 24 45 22 50 22C62 22 65 30 57 37C49 44 38 43 38 52C38 59 48 59 55 59" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+              <path d="M50 50C50 50 58 50 63 50C71 50 78 54 78 62C78 72 68 76 56 76C48 76 45 72 45 66" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+              <path d="M48 50L68 75" stroke="#d4af37" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <div class="logo-text">
+              <h3>Shri Ram</h3>
+              <span>Enterprises</span>
+            </div>
+          </a>
+          <p>Shri Ram Enterprises delivers top-tier residential home appliance repair, parts installation, and diagnostic servicing. Our expert team ensures comfort is restored to your home.</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4 class="footer-title">Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="washing-machine-repair.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Washing Machine Repair</a></li>
+            <li><a href="fridge-repair.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Refrigerator Repairing</a></li>
+            <li><a href="microwave-oven-repair.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> Microwave Oven Repair</a></li>
+            <li><a href="about-us.html"><i class="fa-solid fa-circle-chevron-right" style="font-size: 10px; margin-right: 8px;"></i> About Our Business</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4 class="footer-title">Contact Support</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:9604064825">+91 96040 64825</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:shriramenterprises084@gmail.com">shriramenterprises084@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Shop No. 4, Amar Serenity Condominium Complex, Baner, Pune - 411045</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shri Ram Enterprises. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Custom JS -->
   <script src="js/main.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919604064825?text=Hello,%20I%20would%20like%20to%20book%20a%20repair%20service." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 </body>
 </html>
