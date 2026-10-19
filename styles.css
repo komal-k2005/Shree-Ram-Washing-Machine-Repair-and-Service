@@ -1,0 +1,295 @@
+/* ==========================================================================
+   Shree Ram Enterprises - Modern Appliance Repair CSS Design System
+   Color Palette:
+     - Electric Blue: #2563eb / #1d4ed8
+     - Deep Indigo: #0f172a / #1e1b4b
+     - Vibrant Gold: #facc15 / #eab308
+     - WhatsApp Green: #10b981 / #25d366
+   ========================================================================== */
+
+/* Custom Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a8a;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Ambient Glow Orbs */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.glow-blue {
+  background: radial-gradient(circle, #2563eb 0%, rgba(37, 99, 235, 0) 70%);
+}
+
+.glow-gold {
+  background: radial-gradient(circle, #facc15 0%, rgba(250, 204, 21, 0) 70%);
+}
+
+.glow-indigo {
+  background: radial-gradient(circle, #4f46e5 0%, rgba(79, 70, 229, 0) 70%);
+}
+
+/* Glassmorphism Classes */
+.glass-card {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-navbar {
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Shimmer Hover Card Effect */
+.shimmer-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shimmer-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: 0.75s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.shimmer-card:hover::before {
+  left: 140%;
+}
+
+.shimmer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.25);
+  border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* Continuous Logo Marquee */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4), 0 0 30px rgba(37, 99, 235, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(37, 99, 235, 0.7), 0 0 50px rgba(37, 99, 235, 0.4);
+  }
+}
+
+.pulse-glow-btn {
+  animation: pulseGlow 2.5s infinite;
+}
+
+@keyframes pulseGreen {
+  0%, 100% {
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(16, 185, 129, 0.8);
+  }
+}
+
+.pulse-green-btn {
+  animation: pulseGreen 2.2s infinite;
+}
+
+/* Floating Badges in Hero */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.floating-badge-1 {
+  animation: floatSlow 3.5s ease-in-out infinite;
+}
+
+.floating-badge-2 {
+  animation: floatSlow 4s ease-in-out infinite 1s;
+}
+
+.floating-badge-3 {
+  animation: floatSlow 3.8s ease-in-out infinite 2s;
+}
+
+/* Timeline Step Connector */
+.timeline-step {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .timeline-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: calc(50% + 40px);
+    width: calc(100% - 80px);
+    height: 3px;
+    background: linear-gradient(90deg, #2563eb, #facc15);
+    z-index: 1;
+  }
+}
+
+/* Interactive Chips in Form */
+.chip-btn {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.chip-btn.active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border-color: #60a5fa;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+  transform: scale(1.02);
+}
+
+.slot-btn {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.slot-btn.active {
+  background: #facc15;
+  color: #0f172a;
+  border-color: #eab308;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(250, 204, 21, 0.4);
+}
+
+/* WhatsApp Message Bubble */
+.whatsapp-bubble {
+  background-color: #dcf8c6;
+  position: relative;
+  border-radius: 14px 14px 14px 0px;
+}
+
+.whatsapp-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -8px;
+  width: 0;
+  height: 0;
+  border-right: 8px solid #dcf8c6;
+  border-top: 8px solid transparent;
+}
+
+/* FAQ Accordion Styling */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+  color: #facc15;
+}
+
+/* Sticky Mobile Bottom Bar */
+.mobile-bottom-dock {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 10px 16px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .mobile-bottom-dock {
+    display: none !important;
+  }
+}
+
+/* Padding fix so sticky mobile bottom dock doesn't overlap footer */
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 74px;
+  }
+}
