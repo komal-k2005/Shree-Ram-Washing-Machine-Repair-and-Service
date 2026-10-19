@@ -128,9 +128,33 @@ Please confirm the technician arrival time (60-90 Mins). Thank you!`;
 
   // Input Event Listeners
   nameInput?.addEventListener('input', updateWhatsAppPreview);
-  phoneInput?.addEventListener('input', updateWhatsAppPreview);
+  phoneInput?.addEventListener('input', () => {
+    phoneInput?.classList.remove('ring-2', 'ring-red-500', 'border-red-500');
+    const alertMsg = document.getElementById('phone-alert');
+    if (alertMsg) alertMsg.remove();
+    updateWhatsAppPreview();
+  });
   addressInput?.addEventListener('input', updateWhatsAppPreview);
   issueInput?.addEventListener('input', updateWhatsAppPreview);
+
+  // Submit WhatsApp click validation
+  submitBtn?.addEventListener('click', (e) => {
+    const phone = phoneInput?.value.trim();
+    if (!phone || phone.length < 10) {
+      e.preventDefault();
+      phoneInput?.focus();
+      phoneInput?.classList.add('ring-2', 'ring-red-500', 'border-red-500');
+      let alertMsg = document.getElementById('phone-alert');
+      if (!alertMsg) {
+        alertMsg = document.createElement('p');
+        alertMsg.id = 'phone-alert';
+        alertMsg.className = 'text-xs text-red-400 font-semibold mt-1 animate-pulse';
+        alertMsg.innerText = '⚠️ Please enter your 10-digit phone number for technician dispatch.';
+        phoneInput?.parentElement?.parentElement?.appendChild(alertMsg);
+      }
+      return;
+    }
+  });
 
   // Initial WhatsApp Preview Rendering
   updateWhatsAppPreview();
